@@ -1,0 +1,67 @@
+:root {
+  --primary-bg: #23253a;
+  --secondary-bg: #171827;
+  --text-color: #eef1f7;
+  --muted-color: #cfd6e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Ubuntu', sans-serif;
+  color: var(--text-color);
+  background: linear-gradient(135deg, var(--primary-bg), var(--secondary-bg));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.header h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.subheader {
+  opacity: 0.85;
+}
+
+.grid-layout {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 18px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+}
+
+.card ul {
+  margin-left: 20px;
+}
+
+.footer {
+  margin: 32px auto 40px;
+  opacity: 0.75;
+  font-size: 14px;
+}
